@@ -1,55 +1,54 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+**Sync Impact Report**
+
+- **Version Change**: 1.0.0 → 1.0.0 (Content revision)
+- **Summary**: Revised constitution to focus solely on the Docusaurus textbook, removing the chatbot component per user request.
+- **Modified Sections**:
+  - All principles updated to reflect the book-only scope.
+- **Removed Sections**:
+  - None (content was revised).
+- **Templates Requiring Updates**:
+  - ⚠ pending: `.specify/templates/plan-template.md` (Constitution Check needs update)
+- **Follow-up TODOs**:
+  - None.
+-->
+# Physical AI & Humanoid Robotics Textbook Constitution
+
+This document outlines the mission, principles, and governance for the project to create a Docusaurus textbook on "Physical AI & Humanoid Robotics". Its purpose is to ensure clarity, alignment, and quality, with a strict focus on producing a beginner-friendly book.
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Mission & Scope
+Our mission is to create a comprehensive, beginner-friendly Docusaurus textbook on "Physical AI & Humanoid Robotics".
+- **In Scope:**
+  - A complete Docusaurus textbook covering the fundamentals of Physical AI and Humanoid Robotics.
+  - Writing and structuring content in Markdown.
+  - Configuring the Docusaurus site for navigation and presentation.
+- **Out of Scope:**
+  - Any interactive components beyond standard Docusaurus features (e.g., chatbots, APIs, databases).
+  - Any technologies not explicitly listed in the approved stack.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Roles & Responsibilities
+To maintain clarity and accountability, roles are defined as follows:
+- **Architect:** Designs the book's overall structure, learning path, and chapter outline.
+- **Author:** Writes the content, creates examples, and ensures technical accuracy and clarity.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Technology Stack & Tools
+The project MUST adhere to the following approved technology stack to ensure consistency and maintainability.
+- **Content:** Markdown
+- **Platform:** Docusaurus
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Constraints & Guardrails
+Simplicity and accessibility are core constraints.
+- **Beginner-Focused:** All content MUST be written for a beginner audience. Explanations should be clear and avoid unnecessary jargon.
+- **Focus on Writing:** All effort should be directed towards content creation and structuring the book. Do not add complex features or customizations to the Docusaurus site.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
-
-### [PRINCIPLE_6_NAME]
-
-
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### V. Final Deliverables
+The project's success is measured by the delivery of one primary output:
+- **Docusaurus Textbook:** A publicly accessible website with the complete textbook content, well-organized and easy to navigate.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution is the single source of truth for project rules and principles. Any proposed changes must be reviewed and approved by the project architect. All development activities must align with these principles.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-07 | **Last Amended**: 2025-12-07

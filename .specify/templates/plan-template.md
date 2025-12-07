@@ -31,7 +31,10 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **Scope Alignment**: Does the feature align with the mission of writing a textbook?
+- [ ] **Stack Adherence**: Does the plan exclusively use the approved technology stack (Docusaurus, Markdown)?
+- [ ] **Beginner-Focused**: Is the proposed content and structure simple and accessible for beginners?
+- [ ] **Deliverable-Oriented**: Does the feature contribute directly to the Docusaurus textbook?
 
 ## Project Structure
 
