@@ -1,0 +1,24 @@
+{
+  "id": "digital-twin/physics-simulation",
+  "title": "Fundamentals of Physics Simulation (Gravity, Collisions)",
+  "description": "This lesson explores the core principles behind physics simulation in robotics, focusing on gravity and collision detection.",
+  "source": "@site/docs/digital-twin/physics-simulation.md",
+  "sourceDirName": "digital-twin",
+  "slug": "/digital-twin/physics-simulation",
+  "permalink": "/docs/digital-twin/physics-simulation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/digital-twin/physics-simulation.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "roboticsTextbookSidebar",
+  "previous": {
+    "title": "Chapter 2: The Digital Twin (Gazebo & Unity)",
+    "permalink": "/docs/digital-twin"
+  },
+  "next": {
+    "title": "Setting up Environments in Gazebo and Unity",
+    "permalink": "/docs/digital-twin/setup-environments"
+  }
+}

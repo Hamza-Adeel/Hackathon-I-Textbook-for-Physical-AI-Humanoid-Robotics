@@ -1,0 +1,24 @@
+{
+  "id": "nvidia-isaac/intro-to-isaac-sim",
+  "title": "Introduction to Isaac Sim for Photorealistic Simulation",
+  "description": "This lesson introduces NVIDIA Isaac Sim, a powerful platform for photorealistic simulation and robotics development.",
+  "source": "@site/docs/nvidia-isaac/intro-to-isaac-sim.md",
+  "sourceDirName": "nvidia-isaac",
+  "slug": "/nvidia-isaac/intro-to-isaac-sim",
+  "permalink": "/docs/nvidia-isaac/intro-to-isaac-sim",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/nvidia-isaac/intro-to-isaac-sim.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "roboticsTextbookSidebar",
+  "previous": {
+    "title": "Chapter 3: The AI-Robot Brain (NVIDIA Isaac)",
+    "permalink": "/docs/nvidia-isaac"
+  },
+  "next": {
+    "title": "Generating Synthetic Datasets",
+    "permalink": "/docs/nvidia-isaac/synthetic-data"
+  }
+}

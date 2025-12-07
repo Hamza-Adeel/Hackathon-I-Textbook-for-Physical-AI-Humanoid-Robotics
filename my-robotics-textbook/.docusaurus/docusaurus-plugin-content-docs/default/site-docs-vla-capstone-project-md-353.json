@@ -1,0 +1,20 @@
+{
+  "id": "vla/capstone-project",
+  "title": "Capstone Project: Building an Autonomous Humanoid Assistant",
+  "description": "This capstone project integrates all concepts learned throughout the textbook to build a basic autonomous humanoid assistant capable of understanding and executing high-level commands.",
+  "source": "@site/docs/vla/capstone-project.md",
+  "sourceDirName": "vla",
+  "slug": "/vla/capstone-project",
+  "permalink": "/docs/vla/capstone-project",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla/capstone-project.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "roboticsTextbookSidebar",
+  "previous": {
+    "title": "LLM-Based Cognitive Planning",
+    "permalink": "/docs/vla/llm-cognitive-planning"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "nvidia-isaac/synthetic-data",
+  "title": "Generating Synthetic Datasets",
+  "description": "This lesson explores the process and benefits of generating synthetic datasets using NVIDIA Isaac Sim for training AI models.",
+  "source": "@site/docs/nvidia-isaac/synthetic-data.md",
+  "sourceDirName": "nvidia-isaac",
+  "slug": "/nvidia-isaac/synthetic-data",
+  "permalink": "/docs/nvidia-isaac/synthetic-data",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/nvidia-isaac/synthetic-data.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "roboticsTextbookSidebar",
+  "previous": {
+    "title": "Introduction to Isaac Sim for Photorealistic Simulation",
+    "permalink": "/docs/nvidia-isaac/intro-to-isaac-sim"
+  },
+  "next": {
+    "title": "Implementing Isaac ROS VSLAM & Navigation",
+    "permalink": "/docs/nvidia-isaac/isaac-ros-vslam"
+  }
+}

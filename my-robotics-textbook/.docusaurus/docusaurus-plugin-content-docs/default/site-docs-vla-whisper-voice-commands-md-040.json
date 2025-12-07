@@ -1,0 +1,24 @@
+{
+  "id": "vla/whisper-voice-commands",
+  "title": "Converting Speech to Text with Whisper",
+  "description": "This lesson introduces OpenAI's Whisper model for highly accurate speech-to-text conversion, enabling natural language understanding for robotic commands.",
+  "source": "@site/docs/vla/whisper-voice-commands.md",
+  "sourceDirName": "vla",
+  "slug": "/vla/whisper-voice-commands",
+  "permalink": "/docs/vla/whisper-voice-commands",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla/whisper-voice-commands.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "roboticsTextbookSidebar",
+  "previous": {
+    "title": "Chapter 4: Vision-Language-Action (VLA)",
+    "permalink": "/docs/vla"
+  },
+  "next": {
+    "title": "LLM-Based Cognitive Planning",
+    "permalink": "/docs/vla/llm-cognitive-planning"
+  }
+}

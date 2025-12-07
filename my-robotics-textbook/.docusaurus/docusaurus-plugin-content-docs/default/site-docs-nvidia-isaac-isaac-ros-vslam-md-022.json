@@ -1,0 +1,24 @@
+{
+  "id": "nvidia-isaac/isaac-ros-vslam",
+  "title": "Implementing Isaac ROS VSLAM & Navigation",
+  "description": "This lesson covers implementing Visual SLAM (VSLAM) and navigation capabilities using NVIDIA Isaac ROS modules within Isaac Sim.",
+  "source": "@site/docs/nvidia-isaac/isaac-ros-vslam.md",
+  "sourceDirName": "nvidia-isaac",
+  "slug": "/nvidia-isaac/isaac-ros-vslam",
+  "permalink": "/docs/nvidia-isaac/isaac-ros-vslam",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/nvidia-isaac/isaac-ros-vslam.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "roboticsTextbookSidebar",
+  "previous": {
+    "title": "Generating Synthetic Datasets",
+    "permalink": "/docs/nvidia-isaac/synthetic-data"
+  },
+  "next": {
+    "title": "Advanced Path Planning with Nav2 for Humanoids",
+    "permalink": "/docs/nvidia-isaac/nav2-path-planning"
+  }
+}

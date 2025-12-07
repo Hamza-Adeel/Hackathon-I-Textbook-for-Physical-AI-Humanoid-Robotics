@@ -1,0 +1,24 @@
+{
+  "id": "vla/llm-cognitive-planning",
+  "title": "LLM-Based Cognitive Planning",
+  "description": "This lesson explores how Large Language Models (LLMs) can be leveraged for high-level cognitive planning in robotics, translating abstract human commands into executable robot actions.",
+  "source": "@site/docs/vla/llm-cognitive-planning.md",
+  "sourceDirName": "vla",
+  "slug": "/vla/llm-cognitive-planning",
+  "permalink": "/docs/vla/llm-cognitive-planning",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla/llm-cognitive-planning.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "roboticsTextbookSidebar",
+  "previous": {
+    "title": "Converting Speech to Text with Whisper",
+    "permalink": "/docs/vla/whisper-voice-commands"
+  },
+  "next": {
+    "title": "Capstone Project: Building an Autonomous Humanoid Assistant",
+    "permalink": "/docs/vla/capstone-project"
+  }
+}

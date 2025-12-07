@@ -1,0 +1,24 @@
+{
+  "id": "digital-twin/simulating-sensors",
+  "title": "Simulating Sensors (LiDAR, Depth Cameras, IMUs)",
+  "description": "This lesson delves into simulating various robotic sensors within digital twin environments, focusing on LiDAR, depth cameras, and IMUs.",
+  "source": "@site/docs/digital-twin/simulating-sensors.md",
+  "sourceDirName": "digital-twin",
+  "slug": "/digital-twin/simulating-sensors",
+  "permalink": "/docs/digital-twin/simulating-sensors",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/digital-twin/simulating-sensors.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "roboticsTextbookSidebar",
+  "previous": {
+    "title": "Setting up Environments in Gazebo and Unity",
+    "permalink": "/docs/digital-twin/setup-environments"
+  },
+  "next": {
+    "title": "Chapter 3: The AI-Robot Brain (NVIDIA Isaac)",
+    "permalink": "/docs/nvidia-isaac"
+  }
+}
