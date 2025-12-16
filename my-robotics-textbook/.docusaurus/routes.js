@@ -3,6 +3,41 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/robotics-textbook/__docusaurus/debug',
+    component: ComponentCreator('/robotics-textbook/__docusaurus/debug', '71b'),
+    exact: true
+  },
+  {
+    path: '/robotics-textbook/__docusaurus/debug/config',
+    component: ComponentCreator('/robotics-textbook/__docusaurus/debug/config', 'a18'),
+    exact: true
+  },
+  {
+    path: '/robotics-textbook/__docusaurus/debug/content',
+    component: ComponentCreator('/robotics-textbook/__docusaurus/debug/content', 'd5c'),
+    exact: true
+  },
+  {
+    path: '/robotics-textbook/__docusaurus/debug/globalData',
+    component: ComponentCreator('/robotics-textbook/__docusaurus/debug/globalData', 'd1c'),
+    exact: true
+  },
+  {
+    path: '/robotics-textbook/__docusaurus/debug/metadata',
+    component: ComponentCreator('/robotics-textbook/__docusaurus/debug/metadata', '125'),
+    exact: true
+  },
+  {
+    path: '/robotics-textbook/__docusaurus/debug/registry',
+    component: ComponentCreator('/robotics-textbook/__docusaurus/debug/registry', '5d3'),
+    exact: true
+  },
+  {
+    path: '/robotics-textbook/__docusaurus/debug/routes',
+    component: ComponentCreator('/robotics-textbook/__docusaurus/debug/routes', 'cca'),
+    exact: true
+  },
+  {
     path: '/robotics-textbook/blog',
     component: ComponentCreator('/robotics-textbook/blog', 'c7c'),
     exact: true

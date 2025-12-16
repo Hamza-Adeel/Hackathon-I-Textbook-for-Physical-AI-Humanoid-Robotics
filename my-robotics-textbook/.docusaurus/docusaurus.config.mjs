@@ -28,9 +28,9 @@ export default {
     },
     "experimental_router": "browser"
   },
-  "url": "https://gemini-agent.github.io",
+  "url": "https://Hamza-Adeel.github.io",
   "baseUrl": "/robotics-textbook/",
-  "organizationName": "gemini-agent",
+  "organizationName": "Hamza-Adeel",
   "projectName": "robotics-textbook",
   "onBrokenLinks": "throw",
   "i18n": {
@@ -76,10 +76,6 @@ export default {
     },
     "navbar": {
       "title": "Physical AI & Humanoid Robotics",
-      "logo": {
-        "alt": "My Site Logo",
-        "src": "img/logo.svg"
-      },
       "items": [
         {
           "type": "docSidebar",
@@ -88,7 +84,7 @@ export default {
           "label": "Textbook"
         },
         {
-          "href": "https://github.com/gemini-agent/robotics-textbook",
+          "href": "https://github.com/Hamza-Adeel/Hackathon-I-Textbook-for-Physical-AI-Humanoid-Robotics",
           "label": "GitHub",
           "position": "right"
         }
@@ -133,7 +129,7 @@ export default {
             },
             {
               "label": "GitHub",
-              "href": "https://github.com/gemini-agent/robotics-textbook"
+              "href": "https://github.com/Hamza-Adeel/Hackathon-I-Textbook-for-Physical-AI-Humanoid-Robotics"
             }
           ]
         }

@@ -15,14 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://gemini-agent.github.io',
+  url: 'https://Hamza-Adeel.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/robotics-textbook/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'gemini-agent', // Usually your GitHub org/user name.
+  organizationName: 'Hamza-Adeel', // Usually your GitHub org/user name.
   projectName: 'robotics-textbook', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -68,10 +68,10 @@ const config: Config = {
     },
     navbar: {
       title: 'Physical AI & Humanoid Robotics',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
+      // logo: {
+      //   alt: 'My Site Logo',
+      //   src: 'img/logo.svg',
+      // },
       items: [
         {
           type: 'docSidebar',
@@ -81,7 +81,7 @@ const config: Config = {
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/gemini-agent/robotics-textbook',
+          href: 'https://github.com/Hamza-Adeel/Hackathon-I-Textbook-for-Physical-AI-Humanoid-Robotics',
           label: 'GitHub',
           position: 'right',
         },
@@ -125,7 +125,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/gemini-agent/robotics-textbook',
+              href: 'https://github.com/Hamza-Adeel/Hackathon-I-Textbook-for-Physical-AI-Humanoid-Robotics',
             },
           ],
         },
