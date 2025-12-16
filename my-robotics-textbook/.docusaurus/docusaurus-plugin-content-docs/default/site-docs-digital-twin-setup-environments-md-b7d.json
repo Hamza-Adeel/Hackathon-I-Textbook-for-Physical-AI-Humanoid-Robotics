@@ -1,24 +1,26 @@
 {
   "id": "digital-twin/setup-environments",
-  "title": "Setting up Environments in Gazebo and Unity",
-  "description": "This lesson guides you through setting up simulation environments in Gazebo and Unity for digital twin development.",
+  "title": "Setting up Simulation Environments",
+  "description": "Welcome to the second chapter, where we dive into the world of Digital Twins. A digital twin is a virtual model of a physical object or system, and in robotics, simulation is our primary tool for creating and interacting with them.",
   "source": "@site/docs/digital-twin/setup-environments.md",
   "sourceDirName": "digital-twin",
   "slug": "/digital-twin/setup-environments",
-  "permalink": "/docs/digital-twin/setup-environments",
+  "permalink": "/robotics-textbook/docs/digital-twin/setup-environments",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/digital-twin/setup-environments.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Setting up Simulation Environments",
+    "sidebar_label": "Setup Environments"
+  },
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
-    "title": "Fundamentals of Physics Simulation (Gravity, Collisions)",
-    "permalink": "/docs/digital-twin/physics-simulation"
+    "title": "URDF for Humanoids",
+    "permalink": "/robotics-textbook/docs/ros-2/urdf-for-humanoids"
   },
   "next": {
-    "title": "Simulating Sensors (LiDAR, Depth Cameras, IMUs)",
-    "permalink": "/docs/digital-twin/simulating-sensors"
+    "title": "Physics Simulation",
+    "permalink": "/robotics-textbook/docs/digital-twin/physics-simulation"
   }
 }

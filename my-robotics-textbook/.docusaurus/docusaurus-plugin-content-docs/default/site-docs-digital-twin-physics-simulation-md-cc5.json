@@ -1,24 +1,26 @@
 {
   "id": "digital-twin/physics-simulation",
-  "title": "Fundamentals of Physics Simulation (Gravity, Collisions)",
-  "description": "This lesson explores the core principles behind physics simulation in robotics, focusing on gravity and collision detection.",
+  "title": "The Physics of Simulation",
+  "description": "A digital twin is more than just a 3D model; it's a dynamic representation that behaves like its real-world counterpart. The magic behind this realism is the physics engine, a core component of any robotics simulator.",
   "source": "@site/docs/digital-twin/physics-simulation.md",
   "sourceDirName": "digital-twin",
   "slug": "/digital-twin/physics-simulation",
-  "permalink": "/docs/digital-twin/physics-simulation",
+  "permalink": "/robotics-textbook/docs/digital-twin/physics-simulation",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/digital-twin/physics-simulation.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "The Physics of Simulation",
+    "sidebar_label": "Physics Simulation"
+  },
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
-    "title": "Chapter 2: The Digital Twin (Gazebo & Unity)",
-    "permalink": "/docs/digital-twin"
+    "title": "Setup Environments",
+    "permalink": "/robotics-textbook/docs/digital-twin/setup-environments"
   },
   "next": {
-    "title": "Setting up Environments in Gazebo and Unity",
-    "permalink": "/docs/digital-twin/setup-environments"
+    "title": "Simulating Sensors",
+    "permalink": "/robotics-textbook/docs/digital-twin/simulating-sensors"
   }
 }

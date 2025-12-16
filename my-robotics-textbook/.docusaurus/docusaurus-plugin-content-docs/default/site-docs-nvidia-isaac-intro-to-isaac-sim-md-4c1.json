@@ -1,24 +1,26 @@
 {
   "id": "nvidia-isaac/intro-to-isaac-sim",
-  "title": "Introduction to Isaac Sim for Photorealistic Simulation",
-  "description": "This lesson introduces NVIDIA Isaac Sim, a powerful platform for photorealistic simulation and robotics development.",
+  "title": "Introduction to Isaac Sim",
+  "description": "Welcome to Chapter 3, where we explore NVIDIA's powerful robotics platform, Isaac Sim. While Gazebo is a fantastic general-purpose robotics simulator, Isaac Sim excels in creating high-fidelity, photorealistic worlds, making it a premier choice for developing AI-powered robots that rely on vision and perception.",
   "source": "@site/docs/nvidia-isaac/intro-to-isaac-sim.md",
   "sourceDirName": "nvidia-isaac",
   "slug": "/nvidia-isaac/intro-to-isaac-sim",
-  "permalink": "/docs/nvidia-isaac/intro-to-isaac-sim",
+  "permalink": "/robotics-textbook/docs/nvidia-isaac/intro-to-isaac-sim",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/nvidia-isaac/intro-to-isaac-sim.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Introduction to Isaac Sim",
+    "sidebar_label": "Intro to Isaac Sim"
+  },
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
-    "title": "Chapter 3: The AI-Robot Brain (NVIDIA Isaac)",
-    "permalink": "/docs/nvidia-isaac"
+    "title": "Simulating Sensors",
+    "permalink": "/robotics-textbook/docs/digital-twin/simulating-sensors"
   },
   "next": {
-    "title": "Generating Synthetic Datasets",
-    "permalink": "/docs/nvidia-isaac/synthetic-data"
+    "title": "Synthetic Data",
+    "permalink": "/robotics-textbook/docs/nvidia-isaac/synthetic-data"
   }
 }

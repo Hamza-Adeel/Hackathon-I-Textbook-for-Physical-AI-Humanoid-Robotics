@@ -4,8 +4,8 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
-  "tagline": "Dinosaurs are cool",
+  "title": "Physical AI & Humanoid Robotics",
+  "tagline": "An Open-Source Textbook",
   "favicon": "img/favicon.ico",
   "future": {
     "v4": {
@@ -28,10 +28,10 @@ export default {
     },
     "experimental_router": "browser"
   },
-  "url": "https://your-docusaurus-site.example.com",
-  "baseUrl": "/",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "url": "https://gemini-agent.github.io",
+  "baseUrl": "/robotics-textbook/",
+  "organizationName": "gemini-agent",
+  "projectName": "robotics-textbook",
   "onBrokenLinks": "throw",
   "i18n": {
     "defaultLocale": "en",
@@ -46,8 +46,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "./sidebars.ts",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "sidebarPath": "./sidebars.ts"
         },
         "blog": {
           "showReadingTime": true,
@@ -58,7 +57,6 @@ export default {
             ],
             "xslt": true
           },
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           "onInlineTags": "warn",
           "onInlineAuthors": "warn",
           "onUntruncatedBlogPosts": "warn"
@@ -77,7 +75,7 @@ export default {
       "disableSwitch": false
     },
     "navbar": {
-      "title": "My Site",
+      "title": "Physical AI & Humanoid Robotics",
       "logo": {
         "alt": "My Site Logo",
         "src": "img/logo.svg"
@@ -87,15 +85,10 @@ export default {
           "type": "docSidebar",
           "sidebarId": "roboticsTextbookSidebar",
           "position": "left",
-          "label": "Tutorial"
+          "label": "Textbook"
         },
         {
-          "to": "/blog",
-          "label": "Blog",
-          "position": "left"
-        },
-        {
-          "href": "https://github.com/facebook/docusaurus",
+          "href": "https://github.com/gemini-agent/robotics-textbook",
           "label": "GitHub",
           "position": "right"
         }
@@ -109,8 +102,8 @@ export default {
           "title": "Docs",
           "items": [
             {
-              "label": "Tutorial",
-              "to": "/docs/intro"
+              "label": "Textbook",
+              "to": "/docs/ros-2/understanding-nodes-topics-services"
             }
           ]
         },
@@ -140,12 +133,12 @@ export default {
             },
             {
               "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "href": "https://github.com/gemini-agent/robotics-textbook"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2025 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2025 Physical AI & Humanoid Robotics Authors. Built with Docusaurus."
     },
     "prism": {
       "theme": {

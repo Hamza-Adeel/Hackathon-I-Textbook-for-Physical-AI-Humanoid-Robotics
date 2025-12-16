@@ -1,20 +1,22 @@
 {
   "id": "vla/capstone-project",
-  "title": "Capstone Project: Building an Autonomous Humanoid Assistant",
-  "description": "This capstone project integrates all concepts learned throughout the textbook to build a basic autonomous humanoid assistant capable of understanding and executing high-level commands.",
+  "title": "Capstone Project - VLA-Powered Task Execution",
+  "description": "In this final lesson, we will bring together all the concepts from this textbook to create a complete Vision-Language-Action (VLA) system. Our goal is to build a simulated robot that can understand a spoken, high-level command and execute the corresponding physical task in a simulated environment.",
   "source": "@site/docs/vla/capstone-project.md",
   "sourceDirName": "vla",
   "slug": "/vla/capstone-project",
-  "permalink": "/docs/vla/capstone-project",
+  "permalink": "/robotics-textbook/docs/vla/capstone-project",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla/capstone-project.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Capstone Project - VLA-Powered Task Execution",
+    "sidebar_label": "Capstone Project"
+  },
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
-    "title": "LLM-Based Cognitive Planning",
-    "permalink": "/docs/vla/llm-cognitive-planning"
+    "title": "Cognitive Planning with LLMs",
+    "permalink": "/robotics-textbook/docs/vla/llm-cognitive-planning"
   }
 }

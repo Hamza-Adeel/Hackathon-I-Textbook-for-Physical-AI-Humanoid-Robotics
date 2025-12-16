@@ -1,32 +1,44 @@
-# Advanced Path Planning with Nav2 for Humanoids
+---
+title: Integrating Nav2 for Path Planning
+sidebar_label: Nav2 Path Planning
+---
 
-This lesson builds upon basic navigation and explores advanced path planning concepts within Nav2, specifically tailored for humanoid robots.
+# Lesson 3.3: Integrating Nav2 for Path Planning
 
-## Objective
-By the end of this lesson, you will be able to:
-- Understand the challenges of path planning for multi-limbed humanoid robots.
-- Configure Nav2 planners to account for humanoid kinematics and dynamics.
-- Implement specialized path planning techniques for complex humanoid movements.
+While Isaac Sim is a powerful tool for perception and AI training, robotics is fundamentally about moving and acting in an environment. To achieve autonomous navigation, we can integrate our Isaac Sim simulation with **Nav2**, the standard navigation stack in ROS 2.
 
-## Main Content
-- Review of Nav2 architecture: global and local planners, controllers.
-- Kinematic and dynamic constraints of humanoid robots.
-- Customizing Nav2 planners: Costmaps, footprint, and collision avoidance for complex shapes.
-- Integrating whole-body control (WBC) concepts with Nav2 for humanoid path execution.
-- Handling obstacles and dynamic environments with humanoid-specific strategies.
+This lesson provides a high-level overview of how to get a simulated robot in Isaac Sim to navigate its environment using Nav2.
 
-## Tutorial/Example
-A tutorial focusing on modifying Nav2 configurations (e.g., `planner_server.yaml`, `controller_server.yaml`) within an Isaac Sim environment. This involves:
-1. Loading a humanoid robot model into a simulated environment.
-2. Adjusting costmap parameters to reflect the humanoid's unique geometry and movement capabilities.
-3. Demonstrating how to use Nav2 to generate and execute paths that avoid self-collisions and navigate through narrow spaces, showcasing typical humanoid gaits or walking patterns.
+## What is Nav2?
 
-## Summary
-- Path planning for humanoids is significantly more complex than for wheeled robots due to their multi-degree-of-freedom nature.
-- Nav2 can be adapted to humanoids through careful configuration of costmaps, planners, and controllers.
-- Integration with whole-body control strategies is often necessary for robust humanoid navigation.
+Nav2 is the second generation of the ROS Navigation Stack. It's a complete software package that enables a robot to move from a starting point to a destination while safely avoiding obstacles.
 
-## Further Reading
-- [Nav2 Documentation: Configuring Planners](https://navigation.ros.org/configuration/packages/planner_server.html)
-- [Nav2 Documentation: Configuring Controllers](https://navigation.ros.org/configuration/packages/controller_server.html)
-- [ROS 2 Humanoid Robotics Research](https://ros.org/news/tag/humanoid/)
+It is composed of many different nodes and algorithms, including:
+-   **A global planner**: Finds a long-range path from the start to the goal on a map.
+-   **A local planner**: Generates motor commands to follow the global plan while avoiding immediate obstacles detected by sensors.
+-   **A costmap**: A data structure that represents the environment, marking where obstacles are and where it's safe for the robot to travel.
+-   **An AMCL (Adaptive Monte Carlo Localization) module**: Helps the robot figure out where it is on the map based on sensor data.
+
+## The Sim-to-Real Workflow with Nav2
+
+The power of combining Isaac Sim and Nav2 is that you can develop and tune your entire navigation stack in simulation before deploying it to a physical robot. The workflow looks like this:
+
+1.  **Build Your World**: Create a replica of your real-world environment inside Isaac Sim. This includes the static layout (walls, furniture) and any dynamic obstacles.
+
+2.  **Import Your Robot**: Import your robot's URDF model into the Isaac Sim scene. Configure it with simulated sensors (LiDAR, cameras) and a differential drive controller (or another appropriate controller for your robot's base).
+
+3.  **Bridge to ROS 2**: Use Isaac Sim's built-in ROS 2 bridge to publish the simulated sensor data (like `/scan` and `/odom`) to ROS 2 topics and to subscribe to the command velocity topic (typically `/cmd_vel`) that Nav2 will use to send motor commands.
+
+4.  **Generate a Map**: Just as you would with a real robot, you can "drive" the simulated robot around the environment to build a map using ROS 2 SLAM (Simultaneous Localization and Mapping) tools like `slam_toolbox`.
+
+5.  **Launch Nav2**: With the generated map, launch the Nav2 stack. You can now provide a goal pose in RViz (the ROS 2 visualizer), and Nav2 will take over.
+
+6.  **Navigation in Action**:
+    -   Nav2's global planner will find a path on the map.
+    -   Nav2's local planner will generate velocity commands based on the simulated LiDAR data.
+    -   These commands are sent to the `/cmd_vel` topic.
+    -   Isaac Sim receives these commands and moves the simulated robot.
+    -   The simulated LiDAR provides new data based on the robot's new position.
+    -   This loop continues until the robot reaches its goal.
+
+By using this workflow, you can perfect your Nav2 configuration and test its robustness in a safe, repeatable, and fast simulation environment, significantly speeding up your development time.

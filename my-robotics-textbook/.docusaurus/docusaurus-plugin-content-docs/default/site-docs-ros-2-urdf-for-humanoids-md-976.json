@@ -1,24 +1,26 @@
 {
   "id": "ros-2/urdf-for-humanoids",
-  "title": "Describing Robots with URDF",
-  "description": "This lesson introduces the Unified Robot Description Format (URDF) for modeling robots in ROS 2.",
+  "title": "Building URDF for Humanoid Models",
+  "description": "A crucial part of robotics simulation and visualization is having an accurate model of the robot itself. In the ROS ecosystem, the standard for describing a robot's physical structure is the Unified Robot Description Format (URDF).",
   "source": "@site/docs/ros-2/urdf-for-humanoids.md",
   "sourceDirName": "ros-2",
   "slug": "/ros-2/urdf-for-humanoids",
-  "permalink": "/docs/ros-2/urdf-for-humanoids",
+  "permalink": "/robotics-textbook/docs/ros-2/urdf-for-humanoids",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ros-2/urdf-for-humanoids.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Building URDF for Humanoid Models",
+    "sidebar_label": "URDF for Humanoids"
+  },
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
-    "title": "Building ROS 2 Systems with Python (rclpy)",
-    "permalink": "/docs/ros-2/python-rclpy"
+    "title": "Python Node (RCLPy)",
+    "permalink": "/robotics-textbook/docs/ros-2/python-rclpy"
   },
   "next": {
-    "title": "Chapter 2: The Digital Twin (Gazebo & Unity)",
-    "permalink": "/docs/digital-twin"
+    "title": "Setup Environments",
+    "permalink": "/robotics-textbook/docs/digital-twin/setup-environments"
   }
 }

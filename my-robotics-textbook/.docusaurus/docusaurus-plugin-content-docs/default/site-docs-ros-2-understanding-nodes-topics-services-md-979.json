@@ -1,24 +1,22 @@
 {
   "id": "ros-2/understanding-nodes-topics-services",
-  "title": "Understanding ROS 2 Nodes, Topics, & Services",
-  "description": "This lesson will cover the fundamental concepts of ROS 2 communication: Nodes, Topics, and Services.",
+  "title": "Understanding Nodes, Topics, and Services",
+  "description": "Welcome to the first lesson in our study of the Robotic Nervous System (ROS 2). In this section, we will explore the three fundamental concepts that form the backbone of all ROS 2 applications: Nodes, Topics, and Services.",
   "source": "@site/docs/ros-2/understanding-nodes-topics-services.md",
   "sourceDirName": "ros-2",
   "slug": "/ros-2/understanding-nodes-topics-services",
-  "permalink": "/docs/ros-2/understanding-nodes-topics-services",
+  "permalink": "/robotics-textbook/docs/ros-2/understanding-nodes-topics-services",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ros-2/understanding-nodes-topics-services.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
-  "sidebar": "roboticsTextbookSidebar",
-  "previous": {
-    "title": "Chapter 1: The Robotic Nervous System (ROS 2)",
-    "permalink": "/docs/ros-2"
+  "frontMatter": {
+    "title": "Understanding Nodes, Topics, and Services",
+    "sidebar_label": "Nodes, Topics, Services"
   },
+  "sidebar": "roboticsTextbookSidebar",
   "next": {
-    "title": "Building ROS 2 Systems with Python (rclpy)",
-    "permalink": "/docs/ros-2/python-rclpy"
+    "title": "Python Node (RCLPy)",
+    "permalink": "/robotics-textbook/docs/ros-2/python-rclpy"
   }
 }

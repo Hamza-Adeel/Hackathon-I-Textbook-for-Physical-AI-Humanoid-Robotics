@@ -1,24 +1,26 @@
 {
   "id": "vla/llm-cognitive-planning",
-  "title": "LLM-Based Cognitive Planning",
-  "description": "This lesson explores how Large Language Models (LLMs) can be leveraged for high-level cognitive planning in robotics, translating abstract human commands into executable robot actions.",
+  "title": "Cognitive Planning with LLMs",
+  "description": "Once a robot can understand spoken commands via a speech-to-text model like Whisper, the next challenge is to turn a high-level command like \"clean up the table\" into a concrete sequence of actions. This is the domain of task planning.",
   "source": "@site/docs/vla/llm-cognitive-planning.md",
   "sourceDirName": "vla",
   "slug": "/vla/llm-cognitive-planning",
-  "permalink": "/docs/vla/llm-cognitive-planning",
+  "permalink": "/robotics-textbook/docs/vla/llm-cognitive-planning",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vla/llm-cognitive-planning.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Cognitive Planning with LLMs",
+    "sidebar_label": "Cognitive Planning with LLMs"
+  },
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
-    "title": "Converting Speech to Text with Whisper",
-    "permalink": "/docs/vla/whisper-voice-commands"
+    "title": "Whisper Voice Commands",
+    "permalink": "/robotics-textbook/docs/vla/whisper-voice-commands"
   },
   "next": {
-    "title": "Capstone Project: Building an Autonomous Humanoid Assistant",
-    "permalink": "/docs/vla/capstone-project"
+    "title": "Capstone Project",
+    "permalink": "/robotics-textbook/docs/vla/capstone-project"
   }
 }

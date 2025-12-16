@@ -1,29 +1,34 @@
-# Understanding ROS 2 Nodes, Topics, & Services
+---
+title: Understanding Nodes, Topics, and Services
+sidebar_label: Nodes, Topics, Services
+---
 
-This lesson will cover the fundamental concepts of ROS 2 communication: Nodes, Topics, and Services.
+# Lesson 1.1: Understanding Nodes, Topics, and Services
 
-## Objective
-By the end of this lesson, you will be able to:
-- Understand the role of Nodes in a ROS 2 system.
-- Differentiate between Topics and Services as communication mechanisms.
-- Explain how data flows through a ROS 2 network.
+Welcome to the first lesson in our study of the Robotic Nervous System (ROS 2). In this section, we will explore the three fundamental concepts that form the backbone of all ROS 2 applications: Nodes, Topics, and Services.
 
-## Main Content
-- Introduction to ROS 2 architecture.
-- Detailed explanation of Nodes: purpose, lifecycle, and interaction.
-- In-depth look at Topics: publisher-subscriber model, message types, quality of service (QoS) settings.
-- Understanding Services: client-server model, request-response mechanism.
+## What is a ROS 2 Node?
 
-## Tutorial/Example
-A hands-on example demonstrating how to create a simple ROS 2 publisher node that publishes a string message on a topic, and a subscriber node that receives and prints it.
-Another example showing how to create a ROS 2 service that adds two numbers, and a client that calls it.
+A **Node** is the smallest unit of computation in ROS 2. Think of it as a single, executable process that performs a specific task. A robot system is typically composed of many nodes working together. For example, you might have one node for controlling the wheel motors, another for processing camera data, and a third for planning paths.
 
-## Summary
-- Nodes are executable processes that perform computation.
-- Topics enable asynchronous, many-to-many communication using a publisher-subscriber pattern.
-- Services enable synchronous, one-to-one communication using a client-server, request-response pattern.
+Each node in a ROS 2 system can communicate with other nodes, allowing for a modular and distributed architecture.
 
-## Further Reading
-- [ROS 2 Documentation: Concepts](https://docs.ros.org/en/humble/Concepts.html)
-- [ROS 2 Documentation: Writing a Simple Publisher and Subscriber (C++)](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Writing-A-Simple-Publisher-And-Subscriber--Cpp.html)
-- [ROS 2 Documentation: Writing a Simple Publisher and Subscriber (Python)](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Writing-A-Simple-Publisher-And-Subscriber--Python.html)
+## Communication via Topics
+
+**Topics** are named buses over which nodes exchange messages. They are the primary method for one-way, asynchronous communication.
+
+-   **Publishers**: A node can *publish* messages to a topic. For instance, a camera node would publish image data to an `/image_raw` topic.
+-   **Subscribers**: A node can *subscribe* to a topic to receive messages. For example, an image processing node would subscribe to `/image_raw` to get the data it needs to analyze.
+
+This publish/subscribe model decouples the nodes from each other. The camera node doesn't need to know or care which other nodes are receiving the data it publishes.
+
+## Request/Response with Services
+
+**Services** provide a way for nodes to perform request/response style communication. This is a synchronous, two-way communication pattern.
+
+-   **Service Server**: One node acts as a *service server*, offering a specific capability. It waits for a request, performs a computation, and returns a result.
+-   **Service Client**: Another node acts as a *service client*, sending a request to the server and waiting for the response.
+
+A good example is a service that computes the inverse kinematics for a robot arm. A planning node would send a request with the desired end-effector pose, and the kinematics service would respond with the required joint angles.
+
+By understanding these three core concepts, you have the foundation needed to build complex and robust robotic applications with ROS 2.

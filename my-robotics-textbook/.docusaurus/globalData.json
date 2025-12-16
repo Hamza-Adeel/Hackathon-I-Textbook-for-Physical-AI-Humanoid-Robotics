@@ -1,98 +1,77 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/robotics-textbook/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/docs",
+          "path": "/robotics-textbook/docs",
           "mainDocId": "ros-2/understanding-nodes-topics-services",
           "docs": [
             {
               "id": "digital-twin/physics-simulation",
-              "path": "/docs/digital-twin/physics-simulation",
+              "path": "/robotics-textbook/docs/digital-twin/physics-simulation",
               "sidebar": "roboticsTextbookSidebar"
             },
             {
               "id": "digital-twin/setup-environments",
-              "path": "/docs/digital-twin/setup-environments",
+              "path": "/robotics-textbook/docs/digital-twin/setup-environments",
               "sidebar": "roboticsTextbookSidebar"
             },
             {
               "id": "digital-twin/simulating-sensors",
-              "path": "/docs/digital-twin/simulating-sensors",
+              "path": "/robotics-textbook/docs/digital-twin/simulating-sensors",
               "sidebar": "roboticsTextbookSidebar"
             },
             {
               "id": "nvidia-isaac/intro-to-isaac-sim",
-              "path": "/docs/nvidia-isaac/intro-to-isaac-sim",
+              "path": "/robotics-textbook/docs/nvidia-isaac/intro-to-isaac-sim",
               "sidebar": "roboticsTextbookSidebar"
             },
             {
               "id": "nvidia-isaac/isaac-ros-vslam",
-              "path": "/docs/nvidia-isaac/isaac-ros-vslam",
-              "sidebar": "roboticsTextbookSidebar"
+              "path": "/robotics-textbook/docs/nvidia-isaac/isaac-ros-vslam"
             },
             {
               "id": "nvidia-isaac/nav2-path-planning",
-              "path": "/docs/nvidia-isaac/nav2-path-planning",
+              "path": "/robotics-textbook/docs/nvidia-isaac/nav2-path-planning",
               "sidebar": "roboticsTextbookSidebar"
             },
             {
               "id": "nvidia-isaac/synthetic-data",
-              "path": "/docs/nvidia-isaac/synthetic-data",
+              "path": "/robotics-textbook/docs/nvidia-isaac/synthetic-data",
               "sidebar": "roboticsTextbookSidebar"
             },
             {
               "id": "ros-2/python-rclpy",
-              "path": "/docs/ros-2/python-rclpy",
+              "path": "/robotics-textbook/docs/ros-2/python-rclpy",
               "sidebar": "roboticsTextbookSidebar"
             },
             {
               "id": "ros-2/understanding-nodes-topics-services",
-              "path": "/docs/ros-2/understanding-nodes-topics-services",
+              "path": "/robotics-textbook/docs/ros-2/understanding-nodes-topics-services",
               "sidebar": "roboticsTextbookSidebar"
             },
             {
               "id": "ros-2/urdf-for-humanoids",
-              "path": "/docs/ros-2/urdf-for-humanoids",
+              "path": "/robotics-textbook/docs/ros-2/urdf-for-humanoids",
               "sidebar": "roboticsTextbookSidebar"
             },
             {
               "id": "vla/capstone-project",
-              "path": "/docs/vla/capstone-project",
+              "path": "/robotics-textbook/docs/vla/capstone-project",
               "sidebar": "roboticsTextbookSidebar"
             },
             {
               "id": "vla/llm-cognitive-planning",
-              "path": "/docs/vla/llm-cognitive-planning",
+              "path": "/robotics-textbook/docs/vla/llm-cognitive-planning",
               "sidebar": "roboticsTextbookSidebar"
             },
             {
               "id": "vla/whisper-voice-commands",
-              "path": "/docs/vla/whisper-voice-commands",
-              "sidebar": "roboticsTextbookSidebar"
-            },
-            {
-              "id": "/ros-2",
-              "path": "/docs/ros-2",
-              "sidebar": "roboticsTextbookSidebar"
-            },
-            {
-              "id": "/digital-twin",
-              "path": "/docs/digital-twin",
-              "sidebar": "roboticsTextbookSidebar"
-            },
-            {
-              "id": "/nvidia-isaac",
-              "path": "/docs/nvidia-isaac",
-              "sidebar": "roboticsTextbookSidebar"
-            },
-            {
-              "id": "/vla",
-              "path": "/docs/vla",
+              "path": "/robotics-textbook/docs/vla/whisper-voice-commands",
               "sidebar": "roboticsTextbookSidebar"
             }
           ],
@@ -100,8 +79,8 @@
           "sidebars": {
             "roboticsTextbookSidebar": {
               "link": {
-                "path": "/docs/ros-2",
-                "label": "Chapter 1: The Robotic Nervous System (ROS 2)"
+                "path": "/robotics-textbook/docs/ros-2/understanding-nodes-topics-services",
+                "label": "ros-2/understanding-nodes-topics-services"
               }
             }
           }

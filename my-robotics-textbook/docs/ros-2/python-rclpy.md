@@ -1,29 +1,68 @@
-# Building ROS 2 Systems with Python (rclpy)
+---
+title: Writing a Python ROS 2 Node (RCLPy)
+sidebar_label: Python Node (RCLPy)
+---
 
-This lesson focuses on practical application of ROS 2 concepts using `rclpy`, the Python client library for ROS 2.
+# Lesson 1.2: Writing a Python ROS 2 Node (RCLPy)
 
-## Objective
-By the end of this lesson, you will be able to:
-- Understand the basics of `rclpy` for ROS 2 development in Python.
-- Create ROS 2 nodes, publishers, subscribers, and services using `rclpy`.
-- Develop simple ROS 2 applications entirely in Python.
+In our previous lesson, we learned about the theoretical concepts of nodes, topics, and services. Now, it's time to put that theory into practice by writing our first ROS 2 node using `rclpy`, the official Python client library for ROS 2.
 
-## Main Content
-- Introduction to `rclpy` and its advantages for rapid prototyping.
-- Setting up a Python environment for ROS 2.
-- Creating a minimal publisher and subscriber node in Python.
-- Implementing a simple service and client in Python.
-- Using ROS 2 command-line tools to inspect `rclpy` nodes and communication.
+## Setting Up Your Environment
 
-## Tutorial/Example
-A step-by-step tutorial guiding you through creating a Python ROS 2 package, defining a custom message type, implementing a publisher that sends these messages, and a subscriber that processes them. The example will involve simulating a robot's battery level and a monitor displaying it.
+Before we start, ensure you have a ROS 2 workspace sourced. If you've followed the standard ROS 2 installation, you can source it with the following command in your terminal:
 
-## Summary
-- `rclpy` is the standard Python client library for ROS 2.
-- It provides APIs to create and manage ROS 2 entities like nodes, topics, and services.
-- Python is highly suitable for ROS 2 development due to its ease of use and extensive library ecosystem.
+```bash
+source /opt/ros/humble/setup.bash
+```
 
-## Further Reading
-- [ROS 2 Documentation: `rclpy` Overview](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/About-ROS2-Client-Libraries.html#rclpy)
-- [ROS 2 Documentation: Writing a Python Publisher and Subscriber](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Publisher-And-Subscriber--Python.html)
-- [ROS 2 Documentation: Python Services](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Service-And-Client--Python.html)
+We will also create a simple Python package to house our node.
+
+## The "Hello, World" of ROS 2: A Simple Publisher
+
+The most common first step is to create a node that publishes a message to a topic. Let's create a publisher that sends a simple string message.
+
+Here is the complete code for a minimal publisher node:
+
+```python
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+
+class MinimalPublisher(Node):
+
+    def __init__(self):
+        super().__init__('minimal_publisher')
+        self.publisher_ = self.create_publisher(String, 'topic', 10)
+        timer_period = 0.5  # seconds
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.i = 0
+
+    def timer_callback(self):
+        msg = String()
+        msg.data = 'Hello World: %d' % self.i
+        self.publisher_.publish(msg)
+        self.get_logger().info('Publishing: "%s"' % msg.data)
+        self.i += 1
+
+def main(args=None):
+    rclpy.init(args=args)
+    minimal_publisher = MinimalPublisher()
+    rclpy.spin(minimal_publisher)
+    minimal_publisher.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
+```
+
+### Code Breakdown
+
+1.  **`rclpy.init()`**: Initializes the ROS 2 client library.
+2.  **`MinimalPublisher(Node)`**: We create a class that inherits from `rclpy.node.Node`.
+3.  **`super().__init__('minimal_publisher')`**: The node is given a name, in this case, `minimal_publisher`.
+4.  **`self.create_publisher(String, 'topic', 10)`**: We create a publisher. It will publish messages of type `std_msgs.msg.String` on a topic named `topic`. The `10` is the queue size.
+5.  **`self.create_timer(...)`**: We create a timer that will call the `timer_callback` function every 0.5 seconds.
+6.  **`timer_callback`**: This function creates a `String` message, populates it with data, publishes it, and logs it to the console.
+7.  **`rclpy.spin()`**: This function keeps the node running so it can continue to publish messages.
+
+This simple example demonstrates the core workflow of creating a ROS 2 node that communicates with the outside world.

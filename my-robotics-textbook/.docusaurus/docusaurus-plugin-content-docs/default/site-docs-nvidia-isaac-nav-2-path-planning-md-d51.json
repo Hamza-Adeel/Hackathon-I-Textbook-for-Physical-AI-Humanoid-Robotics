@@ -1,24 +1,26 @@
 {
   "id": "nvidia-isaac/nav2-path-planning",
-  "title": "Advanced Path Planning with Nav2 for Humanoids",
-  "description": "This lesson builds upon basic navigation and explores advanced path planning concepts within Nav2, specifically tailored for humanoid robots.",
+  "title": "Integrating Nav2 for Path Planning",
+  "description": "While Isaac Sim is a powerful tool for perception and AI training, robotics is fundamentally about moving and acting in an environment. To achieve autonomous navigation, we can integrate our Isaac Sim simulation with Nav2, the standard navigation stack in ROS 2.",
   "source": "@site/docs/nvidia-isaac/nav2-path-planning.md",
   "sourceDirName": "nvidia-isaac",
   "slug": "/nvidia-isaac/nav2-path-planning",
-  "permalink": "/docs/nvidia-isaac/nav2-path-planning",
+  "permalink": "/robotics-textbook/docs/nvidia-isaac/nav2-path-planning",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/nvidia-isaac/nav2-path-planning.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Integrating Nav2 for Path Planning",
+    "sidebar_label": "Nav2 Path Planning"
+  },
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
-    "title": "Implementing Isaac ROS VSLAM & Navigation",
-    "permalink": "/docs/nvidia-isaac/isaac-ros-vslam"
+    "title": "Synthetic Data",
+    "permalink": "/robotics-textbook/docs/nvidia-isaac/synthetic-data"
   },
   "next": {
-    "title": "Chapter 4: Vision-Language-Action (VLA)",
-    "permalink": "/docs/vla"
+    "title": "Whisper Voice Commands",
+    "permalink": "/robotics-textbook/docs/vla/whisper-voice-commands"
   }
 }

@@ -1,24 +1,26 @@
 {
   "id": "ros-2/python-rclpy",
-  "title": "Building ROS 2 Systems with Python (rclpy)",
-  "description": "This lesson focuses on practical application of ROS 2 concepts using rclpy, the Python client library for ROS 2.",
+  "title": "Writing a Python ROS 2 Node (RCLPy)",
+  "description": "In our previous lesson, we learned about the theoretical concepts of nodes, topics, and services. Now, it's time to put that theory into practice by writing our first ROS 2 node using rclpy, the official Python client library for ROS 2.",
   "source": "@site/docs/ros-2/python-rclpy.md",
   "sourceDirName": "ros-2",
   "slug": "/ros-2/python-rclpy",
-  "permalink": "/docs/ros-2/python-rclpy",
+  "permalink": "/robotics-textbook/docs/ros-2/python-rclpy",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/ros-2/python-rclpy.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Writing a Python ROS 2 Node (RCLPy)",
+    "sidebar_label": "Python Node (RCLPy)"
+  },
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
-    "title": "Understanding ROS 2 Nodes, Topics, & Services",
-    "permalink": "/docs/ros-2/understanding-nodes-topics-services"
+    "title": "Nodes, Topics, Services",
+    "permalink": "/robotics-textbook/docs/ros-2/understanding-nodes-topics-services"
   },
   "next": {
-    "title": "Describing Robots with URDF",
-    "permalink": "/docs/ros-2/urdf-for-humanoids"
+    "title": "URDF for Humanoids",
+    "permalink": "/robotics-textbook/docs/ros-2/urdf-for-humanoids"
   }
 }

@@ -1,24 +1,26 @@
 {
   "id": "digital-twin/simulating-sensors",
-  "title": "Simulating Sensors (LiDAR, Depth Cameras, IMUs)",
-  "description": "This lesson delves into simulating various robotic sensors within digital twin environments, focusing on LiDAR, depth cameras, and IMUs.",
+  "title": "Simulating Complex Sensors",
+  "description": "For a digital twin to be useful, it must not only simulate the robot's motion but also the data it perceives from its environment. Modern robotics simulators provide a wide array of plugins for modeling complex sensors.",
   "source": "@site/docs/digital-twin/simulating-sensors.md",
   "sourceDirName": "digital-twin",
   "slug": "/digital-twin/simulating-sensors",
-  "permalink": "/docs/digital-twin/simulating-sensors",
+  "permalink": "/robotics-textbook/docs/digital-twin/simulating-sensors",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/digital-twin/simulating-sensors.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Simulating Complex Sensors",
+    "sidebar_label": "Simulating Sensors"
+  },
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
-    "title": "Setting up Environments in Gazebo and Unity",
-    "permalink": "/docs/digital-twin/setup-environments"
+    "title": "Physics Simulation",
+    "permalink": "/robotics-textbook/docs/digital-twin/physics-simulation"
   },
   "next": {
-    "title": "Chapter 3: The AI-Robot Brain (NVIDIA Isaac)",
-    "permalink": "/docs/nvidia-isaac"
+    "title": "Intro to Isaac Sim",
+    "permalink": "/robotics-textbook/docs/nvidia-isaac/intro-to-isaac-sim"
   }
 }
