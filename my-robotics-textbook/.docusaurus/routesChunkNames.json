@@ -1,324 +1,281 @@
 {
-  "/robotics-textbook/__docusaurus/debug-71b": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/robotics-textbook/__docusaurus/debug/config-a18": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/robotics-textbook/__docusaurus/debug/content-d5c": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    },
-    "__props": "__props---robotics-textbook-docusaurus-debug-contentb-06-fd1"
-  },
-  "/robotics-textbook/__docusaurus/debug/globalData-d1c": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/robotics-textbook/__docusaurus/debug/metadata-125": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/robotics-textbook/__docusaurus/debug/registry-5d3": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/robotics-textbook/__docusaurus/debug/routes-cca": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
   "/robotics-textbook/blog-c7c": {
-    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__comp": "a6aa9e1f",
     "__context": {
-      "plugin": "plugin---blog-369-22e"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---blog-814-8ac",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blog-766-e3c"
+        "content": "7661071f"
       },
       {
-        "content": "content---blogf-4-f-cd7"
+        "content": "f4f34a3a"
       },
       {
-        "content": "content---blog-871-381"
+        "content": "8717b14a"
       },
       {
-        "content": "content---blog-925-e00"
+        "content": "925b3f96"
       }
     ],
-    "__props": "__props---robotics-textbook-blogd-2-c-917"
+    "__props": "d2c6af24"
   },
   "/robotics-textbook/blog/archive-73b": {
-    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
+    "__comp": "9e4087bc",
     "__context": {
-      "plugin": "plugin---blog-369-22e"
+      "plugin": "36994c47"
     },
-    "__props": "__props---robotics-textbook-blog-archive-0-fa-5a8"
+    "__props": "0fa42fe6"
   },
   "/robotics-textbook/blog/authors-8a9": {
-    "__comp": "__comp---theme-blog-pages-blog-authors-list-page-621-70c",
+    "__comp": "621db11d",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---blog-369-22e"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---blog-814-8ac",
-    "__props": "__props---robotics-textbook-blog-authors-91-d-7e8"
+    "sidebar": "814f3328",
+    "__props": "91d6d79d"
   },
   "/robotics-textbook/blog/authors/all-sebastien-lorber-articles-07c": {
-    "__comp": "__comp---theme-blog-pages-blog-authors-posts-page-33-f-bd5",
+    "__comp": "33fc5bb8",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---blog-369-22e"
+      "plugin": "36994c47"
     },
     "items": [
       {
-        "content": "content---blog-766-e3c"
+        "content": "7661071f"
       },
       {
-        "content": "content---blogf-4-f-cd7"
+        "content": "f4f34a3a"
       },
       {
-        "content": "content---blog-925-e00"
+        "content": "925b3f96"
       }
     ],
-    "sidebar": "sidebar---blog-814-8ac",
-    "__props": "__props---robotics-textbook-blog-authors-all-sebastien-lorber-articles-666-9a0"
+    "sidebar": "814f3328",
+    "__props": "6665e3e5"
   },
   "/robotics-textbook/blog/authors/yangshun-d0b": {
-    "__comp": "__comp---theme-blog-pages-blog-authors-posts-page-33-f-bd5",
+    "__comp": "33fc5bb8",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---blog-369-22e"
+      "plugin": "36994c47"
     },
     "items": [
       {
-        "content": "content---blog-766-e3c"
+        "content": "7661071f"
       },
       {
-        "content": "content---blog-871-381"
+        "content": "8717b14a"
       },
       {
-        "content": "content---blog-925-e00"
+        "content": "925b3f96"
       }
     ],
-    "sidebar": "sidebar---blog-814-8ac",
-    "__props": "__props---robotics-textbook-blog-authors-yangshun-2-c-1-e92"
+    "sidebar": "814f3328",
+    "__props": "2c18f289"
   },
   "/robotics-textbook/blog/first-blog-post-d3c": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---blog-369-22e"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-first-blog-poste-27-4a1"
+    "sidebar": "814f3328",
+    "content": "e273c56f"
   },
   "/robotics-textbook/blog/long-blog-post-b53": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---blog-369-22e"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-long-blog-post-736-bc7"
+    "sidebar": "814f3328",
+    "content": "73664a40"
   },
   "/robotics-textbook/blog/mdx-blog-post-ba7": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---blog-369-22e"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-mdx-blog-post-593-37b"
+    "sidebar": "814f3328",
+    "content": "59362658"
   },
   "/robotics-textbook/blog/tags-0d9": {
-    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
+    "__comp": "01a85c17",
     "__context": {
-      "plugin": "plugin---blog-369-22e"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---blog-814-8ac",
-    "__props": "__props---robotics-textbook-blog-tags-0-d-7-d10"
+    "sidebar": "814f3328",
+    "__props": "0d77ffac"
   },
   "/robotics-textbook/blog/tags/docusaurus-348": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---blog-369-22e"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---blog-814-8ac",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blog-766-e3c"
+        "content": "7661071f"
       },
       {
-        "content": "content---blogf-4-f-cd7"
+        "content": "f4f34a3a"
       },
       {
-        "content": "content---blog-871-381"
+        "content": "8717b14a"
       },
       {
-        "content": "content---blog-925-e00"
+        "content": "925b3f96"
       }
     ],
-    "__props": "__props---robotics-textbook-blog-tags-docusauruse-7-d-365"
+    "__props": "e7df6fec"
   },
   "/robotics-textbook/blog/tags/facebook-bfa": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---blog-369-22e"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---blog-814-8ac",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blog-766-e3c"
+        "content": "7661071f"
       }
     ],
-    "__props": "__props---robotics-textbook-blog-tags-facebookb-06-82f"
+    "__props": "b066ab5b"
   },
   "/robotics-textbook/blog/tags/hello-370": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---blog-369-22e"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---blog-814-8ac",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blog-766-e3c"
+        "content": "7661071f"
       },
       {
-        "content": "content---blog-871-381"
+        "content": "8717b14a"
       }
     ],
-    "__props": "__props---robotics-textbook-blog-tags-hellof-89-7e7"
+    "__props": "f893cfec"
   },
   "/robotics-textbook/blog/tags/hola-a63": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---blog-369-22e"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---blog-814-8ac",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blog-925-e00"
+        "content": "925b3f96"
       }
     ],
-    "__props": "__props---robotics-textbook-blog-tags-hola-061-965"
+    "__props": "0616a8a0"
   },
   "/robotics-textbook/blog/welcome-f9d": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__comp": "ccc49370",
     "__context": {
       "data": {
-        "blogMetadata": "blogMetadata---blog-authorsace-e7d"
+        "blogMetadata": "acecf23e"
       },
-      "plugin": "plugin---blog-369-22e"
+      "plugin": "36994c47"
     },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-welcomed-9-f-ffb"
+    "sidebar": "814f3328",
+    "content": "d9f32620"
   },
   "/robotics-textbook/markdown-page-a62": {
-    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__comp": "1f391b9e",
     "__context": {
-      "plugin": "plugin---markdown-pagea-74-7b5"
+      "plugin": "a7456010"
     },
-    "content": "content---markdown-page-393-028"
+    "content": "393be207"
   },
   "/robotics-textbook/docs-2de": {
-    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__comp": "5e95c892",
     "__context": {
-      "plugin": "plugin---docsaba-d7c"
+      "plugin": "aba21aa0"
     }
   },
   "/robotics-textbook/docs-f8a": {
-    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "__props": "__props---robotics-textbook-docs-217-d5d"
+    "__comp": "a7bd4aaa",
+    "__props": "217ef51a"
   },
   "/robotics-textbook/docs-e40": {
-    "__comp": "__comp---theme-doc-roota-94-67a"
+    "__comp": "a94703ab"
   },
   "/robotics-textbook/docs/digital-twin/physics-simulation-9dc": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-digital-twin-physics-simulationcc-5-afb"
+    "__comp": "17896441",
+    "content": "cc578ffd"
   },
   "/robotics-textbook/docs/digital-twin/setup-environments-bca": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-digital-twin-setup-environmentsb-7-d-fc6"
+    "__comp": "17896441",
+    "content": "b7d43eda"
   },
   "/robotics-textbook/docs/digital-twin/simulating-sensors-9b2": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-digital-twin-simulating-sensorsa-8-e-2d7"
+    "__comp": "17896441",
+    "content": "a8eb271b"
   },
   "/robotics-textbook/docs/nvidia-isaac/intro-to-isaac-sim-aca": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-nvidia-isaac-intro-to-isaac-sim-4-c-1-fd1"
+    "__comp": "17896441",
+    "content": "4c1145f0"
   },
   "/robotics-textbook/docs/nvidia-isaac/isaac-ros-vslam-20b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-nvidia-isaac-isaac-ros-vslam-022-3bd"
+    "__comp": "17896441",
+    "content": "0220db5d"
   },
   "/robotics-textbook/docs/nvidia-isaac/nav2-path-planning-ffd": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-nvidia-isaac-nav-2-path-planningd-51-cc8"
+    "__comp": "17896441",
+    "content": "d512da82"
   },
   "/robotics-textbook/docs/nvidia-isaac/synthetic-data-a11": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-nvidia-isaac-synthetic-data-4-eb-377"
+    "__comp": "17896441",
+    "content": "4ebcbee4"
   },
   "/robotics-textbook/docs/ros-2/python-rclpy-7e9": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ros-2-python-rclpy-1-cd-68f"
+    "__comp": "17896441",
+    "content": "1cdee93f"
   },
   "/robotics-textbook/docs/ros-2/understanding-nodes-topics-services-200": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ros-2-understanding-nodes-topics-services-979-992"
+    "__comp": "17896441",
+    "content": "979c971d"
   },
   "/robotics-textbook/docs/ros-2/urdf-for-humanoids-617": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-ros-2-urdf-for-humanoids-976-550"
+    "__comp": "17896441",
+    "content": "976bdcbd"
   },
   "/robotics-textbook/docs/vla/capstone-project-763": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-vla-capstone-project-353-646"
+    "__comp": "17896441",
+    "content": "353421d3"
   },
   "/robotics-textbook/docs/vla/llm-cognitive-planning-ce8": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-vla-llm-cognitive-planning-05-f-64f"
+    "__comp": "17896441",
+    "content": "05f37d03"
   },
   "/robotics-textbook/docs/vla/whisper-voice-commands-550": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-vla-whisper-voice-commands-040-c54"
+    "__comp": "17896441",
+    "content": "040de26a"
   },
   "/robotics-textbook/-608": {
-    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
+    "__comp": "1df93b7f",
     "__context": {
-      "plugin": "plugin---markdown-pagea-74-7b5"
+      "plugin": "a7456010"
     },
-    "config": "config---5-e-9-4f3"
+    "config": "5e9f5e1a"
   }
 }
