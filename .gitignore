@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak
+venv.bak
+
+# Docusaurus
+.docusaurus/
+build/
+coverage/
+node_modules/
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
