@@ -1,99 +1,90 @@
 import qdrant_client
-from qdrant_client.http import models
 import os
 from dotenv import load_dotenv
-import uuid
+from qdrant_client.http.models import Distance, VectorParams, PointStruct
+import logging
 
-# Load environment variables from .env file
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
 load_dotenv()
 
-qdrant_url = os.getenv("QDRANT_URL")
-qdrant_api_key = os.getenv("QDRANT_API_KEY")
-
-if not qdrant_url or not qdrant_api_key:
-    raise ValueError("QDRANT_URL or QDRANT_API_KEY not found in environment variables.")
-
-# Initialize the Qdrant client
-client = qdrant_client.QdrantClient(
-    url=qdrant_url,
-    api_key=qdrant_api_key,
-)
-
 COLLECTION_NAME = "textbook_content"
-VECTOR_SIZE = 1024  # From Cohere's embed-english-v3.0
 
-def create_collection_if_not_exists():
+def get_qdrant_client():
+    """
+    Initializes and returns the Qdrant client.
+    """
+    url = os.getenv("QDRANT_URL")
+    api_key = os.getenv("QDRANT_API_KEY")
+
+    if not url or not api_key:
+        raise ValueError("QDRANT_URL or QDRANT_API_KEY not found in environment variables.")
+
+    logging.info("Qdrant client initialized.")
+    return qdrant_client.QdrantClient(url=url, api_key=api_key)
+
+def create_collection_if_not_exists(client):
     """
     Creates the Qdrant collection if it doesn't already exist.
     """
     try:
         collections = client.get_collections().collections
         collection_names = [collection.name for collection in collections]
+
         if COLLECTION_NAME not in collection_names:
-            client.create_collection(
+            logging.info(f"Collection '{COLLECTION_NAME}' not found. Creating collection.")
+            client.recreate_collection(
                 collection_name=COLLECTION_NAME,
-                vectors_config=models.VectorParams(size=VECTOR_SIZE, distance=models.Distance.COSINE),
+                vectors_config=VectorParams(size=1024, distance=Distance.COSINE),
             )
-            print(f"Collection '{COLLECTION_NAME}' created.")
+            logging.info(f"Collection '{COLLECTION_NAME}' created.")
         else:
-            print(f"Collection '{COLLECTION_NAME}' already exists.")
+            logging.info(f"Collection '{COLLECTION_NAME}' already exists.")
+
     except Exception as e:
-        print(f"Error creating or checking collection: {e}")
+        logging.error(f"Error creating collection: {e}")
 
-
-def upload_vectors(vectors: list[list[float]], payloads: list[dict]):
+def upload_vectors(client, vectors: list[list[float]], payloads: list[dict]):
     """
-    Uploads vectors and their metadata payloads to the Qdrant collection.
+    Uploads vectors and their payloads to the Qdrant collection in batches.
     """
     if not vectors:
         return
 
-    points = [
-        models.PointStruct(
-            id=str(uuid.uuid4()),
-            vector=vector,
-            payload=payload,
-        )
-        for vector, payload in zip(vectors, payloads)
+    batch_size = 100
+    num_vectors = len(vectors)
+    logging.info(f"Uploading {num_vectors} vectors to collection '{COLLECTION_NAME}' in batches of {batch_size}...")
+
+    for i in range(0, num_vectors, batch_size):
+        batch_vectors = vectors[i:i + batch_size]
+        batch_payloads = payloads[i:i + batch_size]
+        
+        points = [
+            PointStruct(id=i + j, vector=vector, payload=payload)
+            for j, (vector, payload) in enumerate(zip(batch_vectors, batch_payloads))
+        ]
+        
+        try:
+            client.upsert(
+                collection_name=COLLECTION_NAME,
+                wait=True,
+                points=points,
+            )
+            logging.info(f"Uploaded batch {i // batch_size + 1}/{(num_vectors + batch_size - 1) // batch_size}")
+        except Exception as e:
+            logging.error(f"Error uploading batch: {e}")
+
+
+if __name__ == '__main__':
+    # Example usage:
+    qdrant_client = get_qdrant_client()
+    create_collection_if_not_exists(qdrant_client)
+
+    # Example data
+    sample_vectors = [[0.1] * 1024, [0.2] * 1024]
+    sample_payloads = [
+        {"text": "This is a sample text.", "source_url": "http://example.com/a", "chapter": "a", "lesson": "a"},
+        {"text": "Another sample text.", "source_url": "http://example.com/b", "chapter": "b", "lesson": "b"},
     ]
 
-    try:
-        client.upsert(
-            collection_name=COLLECTION_NAME,
-            points=points,
-            wait=True,
-        )
-    except Exception as e:
-        print(f"Error uploading vectors to Qdrant: {e}")
-
-def get_collection_count() -> int:
-    """
-    Returns the number of vectors in the collection.
-    """
-    try:
-        count_result = client.count(collection_name=COLLECTION_NAME, exact=True)
-        return count_result.count
-    except Exception as e:
-        print(f"Error getting collection count: {e}")
-        return 0
-
-
-if __name__ == "__main__":
-    # Example usage
-    print("Checking and creating Qdrant collection...")
-    create_collection_if_not_exists()
-
-    # Simulate uploading some data
-    print("\nUploading dummy data...")
-    dummy_vectors = [[i / 10.0 for i in range(VECTOR_SIZE)] for _ in range(2)]
-    dummy_payloads = [
-        {"text": "This is a dummy chunk 1.", "source_url": "http://example.com/page1", "chapter": "intro", "lesson": "dummy-data"},
-        {"text": "This is a dummy chunk 2.", "source_url": "http://example.com/page2", "chapter": "intro", "lesson": "dummy-data-2"},
-    ]
-    
-    upload_vectors(dummy_vectors, dummy_payloads)
-    print("Dummy data upload finished.")
-
-    # Verify count
-    count = get_collection_count()
-    print(f"\nTotal points in collection: {count}")
+    upload_vectors(qdrant_client, sample_vectors, sample_payloads)

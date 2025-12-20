@@ -1,57 +1,46 @@
-from bs4 import Tag
 import re
 
-def chunk_article(article: Tag, chunk_size: int = 1000, overlap: int = 100) -> list[str]:
+def chunk_text(text: str, max_chunk_size: int = 1000, overlap: int = 200) -> list[str]:
     """
-    Chunks the text content of a BeautifulSoup <article> tag.
-    It splits by headings first, then paragraphs, and creates chunks
-    of a target size with overlap.
+    Splits text into chunks of a maximum size, with a specified overlap.
+    This is a simple implementation that splits by sentences.
+    A more advanced implementation could be structure-aware (headings, paragraphs).
     """
+    
+    # Split the text into sentences
+    sentences = re.split(r'(?<=[.!?])\s+', text)
+    
     chunks = []
     current_chunk = ""
     
-    # Find all text blocks (paragraphs, list items, etc.)
-    text_blocks = [p.get_text(strip=True) for p in article.find_all(['p', 'li', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'])]
-    
-    for block in text_blocks:
-        if not block:
-            continue
-            
-        # If adding the next block makes the chunk too large, finalize the current chunk
-        if len(current_chunk) + len(block) > chunk_size:
-            chunks.append(current_chunk.strip())
-            # Start the next chunk with an overlap from the end of the current one
-            current_chunk = current_chunk[-overlap:] + " " + block
+    for sentence in sentences:
+        if len(current_chunk) + len(sentence) + 1 < max_chunk_size:
+            current_chunk += sentence + " "
         else:
-            current_chunk += " " + block
-            
-    # Add the last remaining chunk
+            chunks.append(current_chunk.strip())
+            # Start new chunk with overlap
+            current_chunk = current_chunk[-overlap:] + sentence + " "
+
     if current_chunk:
         chunks.append(current_chunk.strip())
         
     return chunks
 
-if __name__ == "__main__":
-    # This requires a bs4.Tag object, so we'll simulate it
-    from bs4 import BeautifulSoup
+if __name__ == '__main__':
+    # Example usage:
+    sample_text = (
+        "This is the first sentence. This is the second sentence. This is the third sentence. "
+        "Here is a longer fourth sentence to make the chunking more interesting. "
+        "The fifth sentence will definitely push it over the edge. "
+        "And a sixth one for good measure. Let's add a seventh. And an eighth. "
+        "The ninth sentence is here. The tenth sentence concludes this example."
+    )
     
-    sample_html = """
-    <article>
-        <h1>Main Title</h1>
-        <p>This is the first paragraph. It introduces the main topic.</p>
-        <h2>Subtitle 1</h2>
-        <p>This is a paragraph under the first subtitle. It contains some details.</p>
-        <p>This is another paragraph. It continues the discussion.</p>
-        <h2>Subtitle 2</h2>
-        <p>This is a paragraph under the second subtitle. It explains a related concept. It is a bit longer to test the chunking logic and see how it splits the text into smaller pieces.</p>
-    </article>
-    """
-    article_tag = BeautifulSoup(sample_html, "html.parser").find("article")
+    chunks = chunk_text(sample_text, max_chunk_size=150, overlap=50)
     
-    if article_tag:
-        text_chunks = chunk_article(article_tag, chunk_size=150, overlap=30)
-        print(f"Generated {len(text_chunks)} chunks:")
-        for i, chunk in enumerate(text_chunks):
-            print(f"--- Chunk {i+1} ---")
-            print(chunk)
-            print()
+    print(f"Original text length: {len(sample_text)}")
+    print(f"Number of chunks: {len(chunks)}")
+    for i, chunk in enumerate(chunks):
+        print(f"\n--- Chunk {i+1} (length: {len(chunk)}) ---")
+        print(chunk)
+

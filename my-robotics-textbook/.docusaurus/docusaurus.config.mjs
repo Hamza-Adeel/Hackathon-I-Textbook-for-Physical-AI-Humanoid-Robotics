@@ -29,7 +29,7 @@ export default {
     "experimental_router": "browser"
   },
   "url": "https://Hamza-Adeel.github.io",
-  "baseUrl": "/robotics-textbook/",
+  "baseUrl": "/",
   "organizationName": "Hamza-Adeel",
   "projectName": "robotics-textbook",
   "onBrokenLinks": "throw",

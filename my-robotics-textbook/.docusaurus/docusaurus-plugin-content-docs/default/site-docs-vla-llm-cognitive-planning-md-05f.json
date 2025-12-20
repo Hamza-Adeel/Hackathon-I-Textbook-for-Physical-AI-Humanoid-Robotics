@@ -5,7 +5,7 @@
   "source": "@site/docs/vla/llm-cognitive-planning.md",
   "sourceDirName": "vla",
   "slug": "/vla/llm-cognitive-planning",
-  "permalink": "/robotics-textbook/docs/vla/llm-cognitive-planning",
+  "permalink": "/docs/vla/llm-cognitive-planning",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
     "title": "Whisper Voice Commands",
-    "permalink": "/robotics-textbook/docs/vla/whisper-voice-commands"
+    "permalink": "/docs/vla/whisper-voice-commands"
   },
   "next": {
     "title": "Capstone Project",
-    "permalink": "/robotics-textbook/docs/vla/capstone-project"
+    "permalink": "/docs/vla/capstone-project"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/digital-twin/simulating-sensors.md",
   "sourceDirName": "digital-twin",
   "slug": "/digital-twin/simulating-sensors",
-  "permalink": "/robotics-textbook/docs/digital-twin/simulating-sensors",
+  "permalink": "/docs/digital-twin/simulating-sensors",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
     "title": "Physics Simulation",
-    "permalink": "/robotics-textbook/docs/digital-twin/physics-simulation"
+    "permalink": "/docs/digital-twin/physics-simulation"
   },
   "next": {
     "title": "Intro to Isaac Sim",
-    "permalink": "/robotics-textbook/docs/nvidia-isaac/intro-to-isaac-sim"
+    "permalink": "/docs/nvidia-isaac/intro-to-isaac-sim"
   }
 }

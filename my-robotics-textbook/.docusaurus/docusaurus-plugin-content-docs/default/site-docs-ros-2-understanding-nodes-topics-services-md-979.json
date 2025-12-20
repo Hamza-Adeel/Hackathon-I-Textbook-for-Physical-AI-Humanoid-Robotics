@@ -5,7 +5,7 @@
   "source": "@site/docs/ros-2/understanding-nodes-topics-services.md",
   "sourceDirName": "ros-2",
   "slug": "/ros-2/understanding-nodes-topics-services",
-  "permalink": "/robotics-textbook/docs/ros-2/understanding-nodes-topics-services",
+  "permalink": "/docs/ros-2/understanding-nodes-topics-services",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,6 +17,6 @@
   "sidebar": "roboticsTextbookSidebar",
   "next": {
     "title": "Python Node (RCLPy)",
-    "permalink": "/robotics-textbook/docs/ros-2/python-rclpy"
+    "permalink": "/docs/ros-2/python-rclpy"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/digital-twin/setup-environments.md",
   "sourceDirName": "digital-twin",
   "slug": "/digital-twin/setup-environments",
-  "permalink": "/robotics-textbook/docs/digital-twin/setup-environments",
+  "permalink": "/docs/digital-twin/setup-environments",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
     "title": "URDF for Humanoids",
-    "permalink": "/robotics-textbook/docs/ros-2/urdf-for-humanoids"
+    "permalink": "/docs/ros-2/urdf-for-humanoids"
   },
   "next": {
     "title": "Physics Simulation",
-    "permalink": "/robotics-textbook/docs/digital-twin/physics-simulation"
+    "permalink": "/docs/digital-twin/physics-simulation"
   }
 }

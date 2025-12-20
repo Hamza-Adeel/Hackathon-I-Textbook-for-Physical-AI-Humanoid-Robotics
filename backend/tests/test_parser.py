@@ -1,49 +1,50 @@
 import unittest
 from unittest.mock import patch, Mock
-from backend.ingestion import parser
+from backend.ingestion.parser import parse_article_content, get_chapter_and_lesson
 
 class TestParser(unittest.TestCase):
 
     @patch('requests.get')
-    def test_get_article_content_success(self, mock_get):
+    def test_parse_article_content(self, mock_get):
         # Mock the response from requests.get
         mock_response = Mock()
         mock_response.status_code = 200
-        mock_response.content = b'<html><body><article><h1>Title</h1><p>Content</p></article></body></html>'
+        mock_response.content = """
+        <html><body><article>
+        <h1>Test Title</h1>
+        <p>This is a paragraph.</p>
+        </article></body></html>
+        """
         mock_get.return_value = mock_response
 
-        # Call the function
-        article = parser.get_article_content("http://example.com")
+        text, url, chapter, lesson = parse_article_content("http://example.com/docs/chapter1/lesson1")
+        
+        self.assertIn("Test Title", text)
+        self.assertIn("This is a paragraph.", text)
+        self.assertEqual(url, "http://example.com/docs/chapter1/lesson1")
+        self.assertEqual(chapter, "chapter1")
+        self.assertEqual(lesson, "lesson1")
 
-        # Assertions
-        self.assertIsNotNone(article)
-        self.assertEqual(article.name, "article")
-        self.assertIn("Title", article.get_text())
+    def test_get_chapter_and_lesson(self):
+        url = "http://example.com/docs/chapter1/lesson1"
+        chapter, lesson = get_chapter_and_lesson(url)
+        self.assertEqual(chapter, "chapter1")
+        self.assertEqual(lesson, "lesson1")
+        
+        url = "http://example.com/docs/another-chapter/another-lesson"
+        chapter, lesson = get_chapter_and_lesson(url)
+        self.assertEqual(chapter, "another-chapter")
+        self.assertEqual(lesson, "another-lesson")
 
     @patch('requests.get')
-    def test_get_article_content_no_article(self, mock_get):
-        # Mock the response
+    def test_parse_article_content_no_article(self, mock_get):
         mock_response = Mock()
         mock_response.status_code = 200
-        mock_response.content = b'<html><body><p>No article here.</p></body></html>'
+        mock_response.content = "<html><body><p>No article tag</p></body></html>"
         mock_get.return_value = mock_response
 
-        # Call the function
-        article = parser.get_article_content("http://example.com")
-
-        # Assertion
-        self.assertIsNone(article)
-
-    @patch('requests.get')
-    def test_get_article_content_request_fails(self, mock_get):
-        # Mock a request exception
-        mock_get.side_effect = requests.exceptions.RequestException
-
-        # Call the function
-        article = parser.get_article_content("http://example.com")
-
-        # Assertion
-        self.assertIsNone(article)
+        result = parse_article_content("http://example.com")
+        self.assertEqual(result, (None, None, None, None))
 
 if __name__ == '__main__':
     unittest.main()

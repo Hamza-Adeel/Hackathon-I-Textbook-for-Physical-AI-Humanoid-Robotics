@@ -5,7 +5,7 @@
   "source": "@site/docs/nvidia-isaac/intro-to-isaac-sim.md",
   "sourceDirName": "nvidia-isaac",
   "slug": "/nvidia-isaac/intro-to-isaac-sim",
-  "permalink": "/robotics-textbook/docs/nvidia-isaac/intro-to-isaac-sim",
+  "permalink": "/docs/nvidia-isaac/intro-to-isaac-sim",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
     "title": "Simulating Sensors",
-    "permalink": "/robotics-textbook/docs/digital-twin/simulating-sensors"
+    "permalink": "/docs/digital-twin/simulating-sensors"
   },
   "next": {
     "title": "Synthetic Data",
-    "permalink": "/robotics-textbook/docs/nvidia-isaac/synthetic-data"
+    "permalink": "/docs/nvidia-isaac/synthetic-data"
   }
 }

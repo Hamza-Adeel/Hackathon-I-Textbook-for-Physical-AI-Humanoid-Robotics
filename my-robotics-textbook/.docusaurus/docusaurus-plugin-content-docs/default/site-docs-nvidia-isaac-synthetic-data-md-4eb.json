@@ -5,7 +5,7 @@
   "source": "@site/docs/nvidia-isaac/synthetic-data.md",
   "sourceDirName": "nvidia-isaac",
   "slug": "/nvidia-isaac/synthetic-data",
-  "permalink": "/robotics-textbook/docs/nvidia-isaac/synthetic-data",
+  "permalink": "/docs/nvidia-isaac/synthetic-data",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
     "title": "Intro to Isaac Sim",
-    "permalink": "/robotics-textbook/docs/nvidia-isaac/intro-to-isaac-sim"
+    "permalink": "/docs/nvidia-isaac/intro-to-isaac-sim"
   },
   "next": {
     "title": "Nav2 Path Planning",
-    "permalink": "/robotics-textbook/docs/nvidia-isaac/nav2-path-planning"
+    "permalink": "/docs/nvidia-isaac/nav2-path-planning"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/ros-2/python-rclpy.md",
   "sourceDirName": "ros-2",
   "slug": "/ros-2/python-rclpy",
-  "permalink": "/robotics-textbook/docs/ros-2/python-rclpy",
+  "permalink": "/docs/ros-2/python-rclpy",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
     "title": "Nodes, Topics, Services",
-    "permalink": "/robotics-textbook/docs/ros-2/understanding-nodes-topics-services"
+    "permalink": "/docs/ros-2/understanding-nodes-topics-services"
   },
   "next": {
     "title": "URDF for Humanoids",
-    "permalink": "/robotics-textbook/docs/ros-2/urdf-for-humanoids"
+    "permalink": "/docs/ros-2/urdf-for-humanoids"
   }
 }

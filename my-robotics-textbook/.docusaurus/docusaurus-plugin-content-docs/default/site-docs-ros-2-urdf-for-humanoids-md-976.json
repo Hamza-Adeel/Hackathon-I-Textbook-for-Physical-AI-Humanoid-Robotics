@@ -5,7 +5,7 @@
   "source": "@site/docs/ros-2/urdf-for-humanoids.md",
   "sourceDirName": "ros-2",
   "slug": "/ros-2/urdf-for-humanoids",
-  "permalink": "/robotics-textbook/docs/ros-2/urdf-for-humanoids",
+  "permalink": "/docs/ros-2/urdf-for-humanoids",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
     "title": "Python Node (RCLPy)",
-    "permalink": "/robotics-textbook/docs/ros-2/python-rclpy"
+    "permalink": "/docs/ros-2/python-rclpy"
   },
   "next": {
     "title": "Setup Environments",
-    "permalink": "/robotics-textbook/docs/digital-twin/setup-environments"
+    "permalink": "/docs/digital-twin/setup-environments"
   }
 }

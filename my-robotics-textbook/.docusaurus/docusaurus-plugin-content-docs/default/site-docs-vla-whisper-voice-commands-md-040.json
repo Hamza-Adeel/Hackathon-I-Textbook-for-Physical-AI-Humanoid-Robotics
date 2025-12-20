@@ -5,7 +5,7 @@
   "source": "@site/docs/vla/whisper-voice-commands.md",
   "sourceDirName": "vla",
   "slug": "/vla/whisper-voice-commands",
-  "permalink": "/robotics-textbook/docs/vla/whisper-voice-commands",
+  "permalink": "/docs/vla/whisper-voice-commands",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
     "title": "Nav2 Path Planning",
-    "permalink": "/robotics-textbook/docs/nvidia-isaac/nav2-path-planning"
+    "permalink": "/docs/nvidia-isaac/nav2-path-planning"
   },
   "next": {
     "title": "Cognitive Planning with LLMs",
-    "permalink": "/robotics-textbook/docs/vla/llm-cognitive-planning"
+    "permalink": "/docs/vla/llm-cognitive-planning"
   }
 }

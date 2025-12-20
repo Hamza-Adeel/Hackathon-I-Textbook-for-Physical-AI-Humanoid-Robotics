@@ -5,7 +5,7 @@
   "source": "@site/docs/digital-twin/physics-simulation.md",
   "sourceDirName": "digital-twin",
   "slug": "/digital-twin/physics-simulation",
-  "permalink": "/robotics-textbook/docs/digital-twin/physics-simulation",
+  "permalink": "/docs/digital-twin/physics-simulation",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,10 +17,10 @@
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
     "title": "Setup Environments",
-    "permalink": "/robotics-textbook/docs/digital-twin/setup-environments"
+    "permalink": "/docs/digital-twin/setup-environments"
   },
   "next": {
     "title": "Simulating Sensors",
-    "permalink": "/robotics-textbook/docs/digital-twin/simulating-sensors"
+    "permalink": "/docs/digital-twin/simulating-sensors"
   }
 }

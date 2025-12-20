@@ -1,51 +1,58 @@
 import cohere
 import os
 from dotenv import load_dotenv
+import logging
 
-# Load environment variables from .env file
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
 load_dotenv()
 
-cohere_api_key = os.getenv("COHERE_API_KEY")
-if not cohere_api_key:
-    raise ValueError("COHERE_API_KEY not found in environment variables.")
+def get_cohere_client():
+    """
+    Initializes and returns the Cohere client.
+    """
+    api_key = os.getenv("COHERE_API_KEY")
+    if not api_key:
+        raise ValueError("COHERE_API_KEY not found in environment variables.")
+    logging.info("Cohere client initialized.")
+    return cohere.Client(api_key)
 
-# Initialize the Cohere client
-co = cohere.Client(cohere_api_key)
 
-def get_embeddings(texts: list[str], model: str = "embed-english-v3.0") -> list[list[float]]:
+def generate_embeddings(texts: list[str], client) -> list[list[float]]:
     """
     Generates embeddings for a list of texts using the Cohere API.
     """
     if not texts:
         return []
     
+    logging.info(f"Generating embeddings for {len(texts)} texts...")
     try:
-        response = co.embed(
+        response = client.embed(
             texts=texts,
-            model=model,
-            input_type="search_document" # Use "search_document" for texts to be stored in a vector database
+            model="embed-english-v3.0",
+            input_type="search_document"
         )
+        logging.info("Embeddings generated successfully.")
         return response.embeddings
-    except cohere.CohereError as e:
-        print(f"Cohere API error: {e}")
-        # Depending on the error, you might want to handle it differently
-        # For now, we'll return an empty list for simplicity
+    except Exception as e:
+        logging.error(f"Error generating embeddings: {e}")
         return []
 
-if __name__ == "__main__":
-    # Example usage
+if __name__ == '__main__':
+    # Example usage:
+    cohere_client = get_cohere_client()
+    
     sample_texts = [
         "This is the first document.",
-        "This document is the second document.",
-        "And this is the third one.",
-        "Is this the first document?"
+        "This is the second document, which is a bit longer.",
+        "And the third one, for good measure."
     ]
     
-    embeddings = get_embeddings(sample_texts)
+    embeddings = generate_embeddings(sample_texts, cohere_client)
     
     if embeddings:
-        print(f"Successfully generated {len(embeddings)} embeddings.")
-        print(f"Dimension of the first embedding: {len(embeddings[0])}")
-        # print("First embedding:", embeddings[0][:5], "...") # Print first 5 dimensions
+        logging.info(f"Successfully generated {len(embeddings)} embeddings.")
+        for i, embedding in enumerate(embeddings):
+            logging.info(f"  - Embedding {i+1} dimension: {len(embedding)}")
     else:
-        print("Failed to generate embeddings.")
+        logging.error("Failed to generate embeddings.")

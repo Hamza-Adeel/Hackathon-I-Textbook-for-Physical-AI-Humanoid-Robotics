@@ -5,7 +5,7 @@
   "source": "@site/docs/vla/capstone-project.md",
   "sourceDirName": "vla",
   "slug": "/vla/capstone-project",
-  "permalink": "/robotics-textbook/docs/vla/capstone-project",
+  "permalink": "/docs/vla/capstone-project",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,6 +17,6 @@
   "sidebar": "roboticsTextbookSidebar",
   "previous": {
     "title": "Cognitive Planning with LLMs",
-    "permalink": "/robotics-textbook/docs/vla/llm-cognitive-planning"
+    "permalink": "/docs/vla/llm-cognitive-planning"
   }
 }
