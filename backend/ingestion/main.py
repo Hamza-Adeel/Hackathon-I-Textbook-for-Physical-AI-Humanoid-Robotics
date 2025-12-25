@@ -2,7 +2,7 @@ import logging
 from backend.ingestion.crawler import get_all_documentation_urls
 from backend.ingestion.parser import parse_article_content
 from backend.ingestion.chunker import chunk_text
-from backend.ingestion.embedding import get_cohere_client, generate_embeddings
+from backend.shared.embedding import get_cohere_client, generate_embeddings
 from backend.ingestion.vector_db import get_qdrant_client, create_collection_if_not_exists, upload_vectors, COLLECTION_NAME
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')

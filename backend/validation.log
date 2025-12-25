@@ -1,0 +1,8 @@
+2025-12-22 22:06:10,357 - --- Query: What is a URDF file? ---
+2025-12-22 22:06:26,337 - Use pytorch device_name: cpu
+2025-12-22 22:06:26,337 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-22 22:06:33,304 - HTTP Request: POST https://76c7f104-7b9e-488f-bc79-5421c5e6df9c.us-east4-0.gcp.cloud.qdrant.io:6333/collections/textbook_content/points/search "HTTP/1.1 400 Bad Request"
+2025-12-25 20:02:55,745 - --- Query: What is a URDF file? ---
+2025-12-25 20:03:57,720 - Use pytorch device_name: cpu
+2025-12-25 20:03:57,720 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-25 20:04:05,020 - HTTP Request: POST https://76c7f104-7b9e-488f-bc79-5421c5e6df9c.us-east4-0.gcp.cloud.qdrant.io:6333/collections/textbook_content/points/search "HTTP/1.1 400 Bad Request"

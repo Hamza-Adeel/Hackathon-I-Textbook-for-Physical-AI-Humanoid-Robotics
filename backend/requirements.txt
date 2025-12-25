@@ -4,3 +4,6 @@ cohere
 qdrant-client
 python-dotenv
 lxml
+sentence-transformers
+torch
+torchvision
